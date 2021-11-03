@@ -4,6 +4,7 @@ body {
 
 main {
     width: 60%;
+    min-width: 400px;
     margin: 50px auto 80px;
     font-family: sans-serif;
     color: #852747;
