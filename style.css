@@ -20,6 +20,7 @@ body {
 main {
     width: 60%;
     margin: 50px auto 80px;
+    min-width: 455px;
     font-family: 'Indie Flower', cursive;
     color: #852747;
     background-color: #a2416bd8;
@@ -31,6 +32,7 @@ form label {
     display: block;
     margin-bottom: 5px;
     color: #ffded6;
+    padding-bottom: 5px;
 }
 
 form input, button {
@@ -63,6 +65,16 @@ fieldset {
     margin: 0;
     background-color: #f7d5cce8;
     border-color: #852747;
+}
+
+.newContact {
+    background-color: #81324eea;
+    color: #f7d5cce8;
+}
+
+.newContact h2 {
+    background-color: transparent;
+    border: none;
 }
 
 ul {
