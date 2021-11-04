@@ -1,4 +1,4 @@
-/* JSdoc, si scrive come il commento multilinea /**/ 
+/* JSdoc, si scrive come il commento multilinea /**/
 /* ma con un asterisco in più all'apertura */
 
 /**per evitare la ripetizione di querySelector 3 volte dopo nella funzione*/
@@ -23,12 +23,9 @@ const render = (container, items) => {
     const content = elements.join("");
     container.innerHTML = content;
 
-       //AGGIUNGE UN CONTATTO:
-        form.addEventListener("submit", (event) => {
+    //AGGIUNGE UN CONTATTO:
+    form.addEventListener("submit", (event) => {
         event.preventDefault();
-        const newName = document.getElementsByName("newName");
-        const newNumber = document.getElementsByName("newNumber");
-        const newEmail = document.getElementsByName("newEmail");
 
         elements.push(`
         <li><fieldset>
@@ -51,7 +48,7 @@ const render = (container, items) => {
 }
 
 //inizializza gli elementi al caricamento della pagina
-document.addEventListener('DOMContentLoaded', () => { 
+document.addEventListener('DOMContentLoaded', () => {
 
     render(list, data);
 
@@ -76,13 +73,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     input.addEventListener("keyup", (event) => {
         const value = input.value.toLowerCase().trim();
- 
-        const results = data.filter((element) => 
+
+        const results = data.filter((element) =>
             element.name.toLowerCase().search(value) > -1 ||
             element.email.toLowerCase().search(value) > -1
         ); //le funzioni con ritorno si possono concatenare
- 
-        render(list,results);
+
+        render(list, results);
     });
 
 });
