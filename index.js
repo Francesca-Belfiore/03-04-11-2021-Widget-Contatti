@@ -40,6 +40,14 @@ const render = (container, items) => {
         const content = elements.join("");
         container.innerHTML = content;
     });
+
+    //ORDINA CONTATTI
+    const button = q("button.sortButton")
+    button.addEventListener("click", () => {
+        elements.sort();
+        const content = elements.join("");
+        container.innerHTML = content;
+    });
 }
 
 //inizializza gli elementi al caricamento della pagina
