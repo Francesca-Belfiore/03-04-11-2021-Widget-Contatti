@@ -98,3 +98,12 @@ ul li {
 a {
     color: #852747;
 }
+
+.delete {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    float: right;
+    position: relative;
+    top: 15px;
+}
